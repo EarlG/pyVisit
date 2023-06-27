@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Фотогалерея</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        Фотограф Вася Пупкин
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="/">Все</a></li>
+            <li><a href="/мероприятия">Мероприятия</a></li>
+            <li><a href="/портреты">Портреты</a></li>
+            <li><a href="/портреты-ню">Портреты ню</a></li>
+            <li><a href="/about">Обо мне</a></li>
+        </ul>
+    </nav>
+    <div class="gallery">
+        {% for photo in photos %}
+            <div class="photo">
+                <a href="{{ url_for('static', filename=photo.filename) }}" target="_blank">
+                    <img src="{{ url_for('static', filename=photo.filename) }}" alt="Photo">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <footer class="footer">
+        <div class="about-me">
+            <p>Мой телефон: 1234567890</p>
+        </div>
+    </footer>
+</body>
+</html>

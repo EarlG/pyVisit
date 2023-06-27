@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "photo1.jpg",
+    "category": "мероприятия"
+  },
+  {
+    "filename": "photo2.jpg",
+    "category": "портреты"
+  },
+  {
+    "filename": "photo3.jpg",
+    "category": "портреты ню"
+  },
+  {
+    "filename": "4.png",
+    "category": "мероприятия"
+  },
+  {
+    "filename": "5.png",
+    "category": "портреты"
+  },
+  {
+    "filename": "6.png",
+    "category": "портреты ню"
+  }
+]
